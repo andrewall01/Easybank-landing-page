@@ -354,3 +354,77 @@ body {
 }
 
 
+/* ----- MAIN -----*/
+
+@media screen and (max-width: 1440px) {
+  .principal {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .seccion1__parrafo,
+  .seccion3__parrafo {
+    width: 80%;
+  }
+  .seccion4__texto {
+    padding: 8px 40px 8px 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .principal {
+    flex-direction: column;
+  }
+  .principal section {
+    width: 100%;
+  }
+  .seccion1 {
+    order: 2;
+    text-align: center;
+  }
+
+ 
+}
+
+@media screen and (max-width:720px){
+  .principal{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .header__logo{
+    width: 100%;
+  }
+  .header__lista, .btn__started{
+    display: none;
+    
+  }
+  .principal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    flex-direction: row;
+  }
+
+  .seccion1{
+    order: 2;
+    width: 100%;
+  }
+  .seccion2{
+    order: 1;
+    width: 100%;
+  }
+  .section__easybank{
+    order: 3;
+  }
+  .latest{
+    order: 4;
+  }
+  .section__easybank{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
