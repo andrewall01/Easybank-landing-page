@@ -26,6 +26,7 @@ body {
   background-position-y: -200px;
   object-fit: cover;
 }
+
 .menu{
   border: none;
   display: none;
@@ -66,6 +67,8 @@ body {
   padding: 35px 150px;
   background: var(--color-blanco);
 }
+
+
 
 .header__lista {
   list-style: none;
@@ -394,7 +397,7 @@ body {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
 
   body {
     background-image: url("./../images/bg-intro-mobile.svg");
@@ -408,54 +411,59 @@ body {
     padding: 0 30px;
     align-items: center;
   }
-.menu{
-  display: flex;
-  margin-left: 150px;
-}
-  button#menu:focus + nav#superior{
-    display: block;
+
+  .header label{
+    margin-left: 0px;
   }
 
-  nav#superior ul {
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
+  
+  .checkbox{
+    margin-left: 100px;
+    z-index: 1;
+  }
 
-nav#superior ul a {
+  .header__nav{
+    position: absolute;
+    flex-direction: column;
+    width: 90%;
+    z-index: 0;
+  }
+
+  .header__lista{
     display: block;
-    width: 8em;
-    text-decoration: none;
-    border: 1px solid #BE353D;
-    padding: 30px 0;
-    text-align: center;
-    color: #FA453B;
-    background: #EF8E76;
-    transition: 1s all;
-}
+    margin-top: 330px;
+    margin-left: -10px;
+    margin-right: -7px;
+  }
 
-nav#superior li{
-  width: 100%;
-}
+  .header__item{
+    background: var(--color-azul-oscuro);
+    border: 1px solid var(--verde-agua);
+    padding: 15px 40px;
+    text-align: end;
+  }
 
-nav#superior ul a:hover {
-    background: #ec7b5f;
-}
-button#menu {
-  display: block;
-}
-nav#superior {
-  display: none;
-}
-nav#superior ul {
-  flex-direction: column;
-}
+  .header__link{
+    color: var(--color-blanco);
+  }
 
-  .header__lista,
+  .btn__menu{
+    padding: 5px;
+  }
+
+  .btn__menu img{
+    height: 15px;
+  }
+
+  .checkbox:checked ~ .header__nav{
+    display: none;
+  }
+
+ 
   .btn__started {
     display: none;
   }
+
   .principal {
     display: flex;
     padding: 0;
